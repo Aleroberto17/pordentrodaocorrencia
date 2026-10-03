@@ -11,6 +11,7 @@
   main { max-width:42rem; margin:0 auto; }
   h1 { font-size:1.5rem; margin:0 0 .5rem; }
   h2 { font-size:1.05rem; margin:2.2rem 0 .6rem; }
+  h3 { font-size:.98rem; margin:1.4rem 0 .4rem; }
   p, li { color:#c3c8cf; }
   a { color:#e7eaee; }
   .data { color:#8b9199; font-size:.9rem; margin-bottom:2rem; }
@@ -20,53 +21,87 @@
 <body>
 <main>
   <h1>Política de privacidade</h1>
-  <p class="data">Por Dentro da Ocorrência · atualizada em 25 de setembro de 2026</p>
+  <p class="data">Por Dentro da Ocorrência · atualizada em 3 de outubro de 2026</p>
 
   <h2>O que é este aplicativo</h2>
   <p>
     É uma ferramenta de uso pessoal, executada no computador do próprio criador do canal, que
-    envia e agenda no YouTube os vídeos produzidos por ele. Não é um serviço aberto: não tem
-    cadastro, não tem outros usuários e não é distribuído.
+    publica e agenda os vídeos produzidos por ele no canal do YouTube, no perfil do Instagram e
+    na página do Facebook do próprio canal. Não é um serviço aberto: não tem cadastro, não tem
+    outros usuários e não é distribuído.
   </p>
 
   <h2>Que dados são acessados</h2>
   <p>
-    Ao autorizar o acesso, o aplicativo recebe permissão para duas coisas na conta do próprio
-    criador do canal:
+    O aplicativo só age nas contas do próprio criador do canal, com as permissões abaixo.
   </p>
+
+  <h3>YouTube (Google)</h3>
   <ul>
-    <li><strong>Enviar vídeos</strong> (<code>youtube.upload</code>): publicar e agendar vídeos, definir título, descrição, tags, miniatura e legendas.</li>
+    <li><strong>Enviar vídeos</strong> (<code>youtube.upload</code>): publicar e agendar vídeos, definir título, descrição, tags e miniatura.</li>
     <li><strong>Ler dados do canal</strong> (<code>youtube.readonly</code>): apenas para confirmar em qual canal o vídeo será publicado, evitando envio para o canal errado.</li>
+    <li><strong>Legendas e comentário do canal</strong> (<code>youtube.force-ssl</code>): enviar as legendas dos vídeos do canal, organizar os vídeos em playlists do canal e publicar, nos vídeos curtos do próprio canal, um comentário com o link do vídeo completo.</li>
   </ul>
+
+  <h3>Facebook (Meta)</h3>
+  <ul>
+    <li><strong>Listar as páginas administradas</strong> (<code>pages_show_list</code>): apenas para escolher a página do canal entre as páginas que o criador administra.</li>
+    <li><strong>Publicar na página</strong> (<code>pages_manage_posts</code> e <code>pages_read_engagement</code>): publicar os vídeos curtos (Reels) do canal na página do canal e acompanhar o processamento do envio.</li>
+  </ul>
+
+  <h3>Instagram (Meta)</h3>
+  <ul>
+    <li><strong>Publicar no perfil</strong> (<code>instagram_business_basic</code> e <code>instagram_business_content_publish</code>): publicar os vídeos curtos (Reels) do canal no perfil do canal e confirmar o perfil antes do envio.</li>
+  </ul>
+
   <p>
-    Nenhum dado de terceiros é acessado. O aplicativo não lê comentários, não acessa dados de
-    espectadores e não coleta informação de nenhuma outra pessoa.
+    Nenhum dado de terceiros é acessado. O aplicativo não lê comentários nem mensagens, não acessa
+    dados de espectadores ou seguidores e não coleta informação de nenhuma outra pessoa.
   </p>
 
   <h2>Onde os dados ficam</h2>
   <p>
-    O token de acesso fica gravado apenas no computador local do criador, num arquivo de
-    configuração da própria máquina. Nada é enviado para servidores de terceiros, não existe banco
-    de dados remoto e nenhuma informação é compartilhada, vendida ou cedida a quem quer que seja.
+    Os tokens de acesso e os identificadores do canal, do perfil e da página ficam gravados apenas
+    no computador local do criador, num arquivo de configuração da própria máquina. Nada é enviado
+    para servidores de terceiros, não existe banco de dados remoto e nenhuma informação é
+    compartilhada, vendida ou cedida a quem quer que seja.
+  </p>
+  <p>
+    Para o Instagram e o Facebook baixarem um vídeo, ele fica alguns minutos num endereço público
+    de hospedagem e é apagado logo depois da publicação.
   </p>
 
   <h2>Como revogar</h2>
   <p>
-    O acesso pode ser retirado a qualquer momento em
-    <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>,
-    sem depender do aplicativo.
+    O acesso pode ser retirado a qualquer momento, sem depender do aplicativo:
   </p>
+  <ul>
+    <li>Google e YouTube: <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a></li>
+    <li>Facebook: <a href="https://www.facebook.com/settings?tab=business_tools">Configurações › Integrações comerciais</a></li>
+    <li>Instagram: <a href="https://www.instagram.com/accounts/manage_access/">Configurações › Apps e sites</a></li>
+  </ul>
+
+  <h2 id="exclusao">Exclusão de dados</h2>
+  <p>
+    O aplicativo não guarda dados de nenhuma outra pessoa, só os tokens e identificadores das
+    contas do próprio criador, no computador dele. Para excluir esses dados:
+  </p>
+  <ol>
+    <li>retire o acesso pelos links da seção acima, o que invalida os tokens na hora;</li>
+    <li>ou peça a exclusão pelo e-mail abaixo, e os tokens e identificadores são apagados do computador local em até 7 dias.</li>
+  </ol>
 
   <h2>Uso limitado</h2>
   <p>
     O uso das informações recebidas das APIs do Google por este aplicativo obedece à
     <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Dados do Usuário dos Serviços de API do Google</a>,
-    incluindo os requisitos de Uso Limitado.
+    incluindo os requisitos de Uso Limitado. O uso das informações recebidas das plataformas da
+    Meta obedece aos <a href="https://developers.facebook.com/terms/">Termos da Plataforma da Meta</a>.
   </p>
 
   <h2>Contato</h2>
   <p>
-    Dúvidas sobre esta política: <a href="mailto:ale.canaldark2026@gmail.com">ale.canaldark2026@gmail.com</a>
+    Dúvidas sobre esta política ou pedidos de exclusão: <a href="mailto:ale.canaldark2026@gmail.com">ale.canaldark2026@gmail.com</a>
   </p>
 
   <div class="fim"><a href="./index.html">voltar</a></div>
